@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruletka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="roulette-container">
+    <div id="winning-display"></div>
+    <div class="roulette">
+        <div class="roulette-numbers" id="roulette-numbers"></div>
+        <div class="indicator"></div>
+    </div>
+    <button id="spin-button">Zakreć!</button>
+</div>
+
+<div class="balance-bet-container">
+    <div id="balance">Balance: $1000</div>
+    <div class="bet-container">
+        <input type="number" id="bet-amount" placeholder="Stawka">
+        <div class="quick-bet-buttons">
+            <button onclick="addToBet(1)">+1</button>
+            <button onclick="addToBet(2)">+2</button>
+            <button onclick="addToBet(5)">+5</button>
+            <button onclick="addToBet(10)">+10</button>
+        </div>
+        <div class="color-bet-buttons">
+            <button class="bet-color-btn" id="bet-red" onclick="setBetColor('red')">Red</button>
+            <button class="bet-color-btn" id="bet-black" onclick="setBetColor('black')">Black</button>
+            <button class="bet-color-btn" id="bet-green" onclick="setBetColor('green')">Green</button>
+        </div>
+        <div class="number-grid-container">
+            <div class="number-grid" id="number-grid"></div>
+            <button class="number-button green" id="number-0" data-value="0" onclick="toggleNumberSelection(0)">0</button>
+        </div>
+    </div>
+    <div id="result"></div>
+    <div id="error-message"></div>
+</div>
+<div class="back-button-container">
+    <button onclick="window.location.href='../../index.html'">WRÓĆ</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

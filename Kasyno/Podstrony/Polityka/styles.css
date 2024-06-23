@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #21252b;
+    color: #f4f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.noise-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/noise.png');
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.inside-noise-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/noise.png');
+    opacity: 0.27;
+    pointer-events: none;
+    z-index: 0;
+}
+
+footer {
+    padding: 20px;
+    font-size: 14px;
+    color: #8D9090;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 350px; /* Add this line to increase the gap */
+}
+
+
+.back-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-button-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700;
+    color: #4F4F4F;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.back-button-container button:hover {
+    background-color: #FFE066;
+}

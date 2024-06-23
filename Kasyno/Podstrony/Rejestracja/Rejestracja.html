@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="noise-overlay"></div>
+<div class="inside-noise-overlay"></div>
+<main>
+    <div class="login-container">
+        <div class="container-noise-overlay"></div>
+        <div class="container-inside-noise-overlay"></div>
+        <div class="logo">
+            <img src="images/Logo kasyno2.png" alt="Logo" width="200">
+            <span class="handle">@PolitechCasino</span>
+        </div>
+        <h1>Rejestracja</h1>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Hasło</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Potwierdź Hasło</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="input-group">
+                <label>Data Urodzenia</label>
+                <div class="birthday-select">
+                    <select id="day" name="day" required>
+                        <option value="" disabled selected>Day</option>
+                    </select>
+                    <select id="month" name="month" required>
+                        <option value="" disabled selected>Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select id="year" name="year" required>
+                        <option value="" disabled selected>Year</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="register-btn">Zajerestruj</button>
+        </form>
+        <p id="message"></p>
+        <div class="back-button-container">
+            <button onclick="window.location.href='../../index.html'">WRÓĆ</button>
+        </div>
+    </div>
+    
+            
+            
+</main>
+
+<footer>
+    <p>Copyright &copy; SixDouble0 | Powered by Jedek & Marcin225</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

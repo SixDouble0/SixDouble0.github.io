@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="noise-overlay"></div>
+<div class="inside-noise-overlay"></div>
+<div class="login-container">
+    <div class="container-noise-overlay"></div>
+    <div class="container-inside-noise-overlay"></div>
+    <div class="logo">
+        <img src="images/Logo kasyno2.png" alt="Logo" width="200">
+        <span class="handle">@PolitechCasino</span>
+    </div>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" id="loginButton" onclick="window.location.href='../../index.html'">Login</button>
+        <a href="../Rejestracja/Rejestracja.html" class="register-btn">Register</a>
+    </form>
+    <p id="message"></p>
+    <div class="back-button-container">
+        <button id="backButton">WRÓĆ</button>
+    </div>
+</div>
+<script src="script.js"></script>
+<footer>
+    <p>&copy; SixDouble0 | Powered by Jedek & Marcin225</p>
+</footer>
+</body>
+</html>

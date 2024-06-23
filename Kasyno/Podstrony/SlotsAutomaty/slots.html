@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="slot-machine">
+    <div class="slot">
+        <div class="reel" id="reel1"></div>
+    </div>
+    <div class="slot">
+        <div class="reel" id="reel2"></div>
+    </div>
+    <div class="slot">
+        <div class="reel" id="reel3"></div>
+    </div>
+</div>
+<div class="balance-bet-container">
+    <div id="balance">Balance: $1000.00</div>
+    <div class="bet-container">
+        <input type="number" id="bet-amount" placeholder="Stawka">
+        <button onclick="spin()">Spin</button>
+        <div class="quick-bet-buttons">
+            <button onclick="addToBet(1)">+1</button>
+            <button onclick="addToBet(2)">+2</button>
+            <button onclick="addToBet(5)">+5</button>
+            <button onclick="addToBet(10)">+10</button>
+        </div>
+    </div>
+    <div id="result"></div>
+</div>
+<div id="debug" class="debug"></div>
+<script src="script.js"></script>
+<div class="back-button-container">
+    <button onclick="window.location.href='../../index.html'">WRÓĆ</button>
+</div>
+</body>
+</html>

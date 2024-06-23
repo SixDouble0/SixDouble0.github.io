@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "5aa0",
+      "email": "a@gmail.com",
+      "password": "a",
+      "birthday": "1999-12-31",
+      "balance": 440
+    },
+    {
+      "id": "cd47",
+      "email": "b@gmail.com",
+      "password": "b",
+      "birthday": "2000-02-01",
+      "balance": 1000
+    },
+    {
+      "id": "2932",
+      "email": "d@gmail.com",
+      "password": "d",
+      "birthday": "2000-03-02",
+      "balance": 830
+    },
+    {
+      "id": "fc74",
+      "email": "c@gmail.com",
+      "password": "c",
+      "birthday": "2000-03-02",
+      "balance": 1190
+    }
+  ]
+}

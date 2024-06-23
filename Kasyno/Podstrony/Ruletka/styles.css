@@ -1,0 +1,234 @@
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/022/906/785/non_2x/luxury-casino-interior-with-lots-of-slot-machines-postproducted-generative-ai-illustration-free-photo.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.roulette-container {
+    text-align: center;
+    position: relative;
+}
+
+.roulette {
+    position: relative;
+    width: 1200px; /* Increased width */
+    height: 150px; /* Increased height */
+    overflow: hidden;
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #34495e;
+    box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* Glowing gold effect */
+}
+
+.roulette-numbers {
+    display: flex;
+    width: max-content;
+    transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.number {
+    width: 150px; /* Increased width */
+    height: 150px; /* Increased height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px; /* Increased font size */
+    color: #ecf0f1;
+    box-sizing: border-box;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: green;
+}
+
+.indicator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px; /* Thicker indicator */
+    background-color: #FFD700; /* Gold color */
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px #FFD700; /* Glow effect */
+}
+
+.bracket-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    border: 4px solid #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #FFD700;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.highlight {
+    border: 4px solid yellow;
+    box-shadow: 0 0 15px yellow;
+}
+
+.balance-bet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+#balance {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.bet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bet-amount {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700;
+    color: #4F4F4F;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+button:hover {
+    background-color: #FFE066;
+}
+
+.quick-bet-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.quick-bet-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.color-bet-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.color-bet-buttons .bet-color-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.color-bet-buttons .bet-color-btn.selected {
+    box-shadow: 0 0 15px yellow;
+    border: 4px solid yellow;
+}
+
+#bet-red { background-color: red; }
+#bet-black { background-color: black; }
+#bet-green { background-color: green; }
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.number-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 10px;
+}
+
+.number-button {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.number-button.selected {
+    box-shadow: 0 0 15px yellow;
+    border: 4px solid yellow;
+}
+
+.number-button.red { background-color: red; }
+.number-button.black { background-color: black; }
+.number-button.green { background-color: green; }
+
+#number-0 {
+    margin-top: 10px;
+}
+
+#winning-display {
+    font-size: 24px;
+    color: #FFD700;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 2px 2px 8px #000;
+    font-weight: bold;
+}
+#error-message {
+    margin-top: 10px;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+}

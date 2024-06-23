@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazard może uzależniać</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="hand-container">
+        <div class="Dealer-text">Karty Krupiera <span id="dealer-value">0</span></div>
+        <div id="dealer-hand" class="hand"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="hand-container">
+        <div class="Player-text">Karty Gracza <span id="player-value">0</span></div>
+        <div id="player-hand" class="hand1"></div>
+    </div>
+    <div id="buttons">
+        <button id="deal-button">Deal</button>
+        <button id="hit-button">Hit</button>
+        <button id="stand-button">Stand</button>
+    </div>
+    <div id="result"></div>
+    <div class="balance-bet-container">
+        <div id="balance">Balance: $0.00</div>
+        <div class="bet-container">
+            <input type="number" id="bet-amount" placeholder="Bet Amount">
+            <div class="quick-bet-buttons">
+                <button onclick="addToBet(1)">+1</button>
+                <button onclick="addToBet(2)">+2</button>
+                <button onclick="addToBet(5)">+5</button>
+                <button onclick="addToBet(10)">+10</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="back-button-container">
+        <button onclick="window.location.href='../../index.html'">WRÓĆ</button>
+    </div>
+</div>
+<div class="button-container"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="noise-overlay"></div>
+<header>
+    <div class="inside-noise-overlay"></div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Podstrony/Polityka/polityka.html">Polityka</a></li>
+            <li><a href="Podstrony/O_nas/O_nas.html">O nas</a></li>
+            <li><a href="Podstrony/Kontakt/Kontakt.html">Kontakt</a></li>
+            <li><a href="Podstrony/Login/Login.html" id="loginLink">Zaloguj</a></li>
+            <li><a href="Podstrony/Rejestracja/Rejestracja.html" id="registerLink">Stwórz konto</a></li>
+            <li><span id="userEmail"></span></li>
+            <li><button id="logoutButton" style="display:none;">Wyloguj</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="inside-noise-overlay"></div>
+        <div class="logo">
+            <img src="images/Logo kasyno2.png" alt="Logo" width="400">
+            <span class="handle">@PolitechCasino</span>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target ="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>Szukasz najpopularniejszych i najbardziej lubianych gier z naszego portfolio? Tutaj masz je na wyciągnięcie ręki: wybierz i graj.</p>
+    </section>
+
+    <section class="games">
+        <div class="inside-noise-overlay"></div>
+        <h2>Gry</h2>
+        <div class="game-card">
+            <img src="images/Blackjack.png" alt="Black Jack">
+            <a href="Podstrony/Black%20Jack/BlackJack.html" class="glow-btn">Black Jack <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="game-card">
+            <img src="images/slotsicon.png" alt="Slotsy">
+            <a href="Podstrony/SlotsAutomaty/slots.html" class="glow-btn">Automaty <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="game-card">
+            <img src="images/Roulette.png" alt="Ruletka">
+            <a href="Podstrony/Ruletka/Ruletka.html" class="glow-btn">Ruletka <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <div class="inside-noise-overlay"></div>
+        <p>Hazard może prowadzić do poważnych strat finansowych i uzależnienia. Jeżeli odczuwasz problem z hazardem, szukaj pomocy specjalistycznej.</p>
+        <button class="contact-btn" onclick="window.location.href='https://kcpu.gov.pl/uzaleznienia-behawioralne/fundusz-rozwiazywania-problemow-hazardowych/'">Pomoc</button>
+    </section>
+</main>
+
+<footer>
+    <p>Copyright &copy; SixDouble0 | Powered by Jedek & Marcin225</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
